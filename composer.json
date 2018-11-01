@@ -1,7 +1,9 @@
 {
     "name": "ammadkhalid/pyapi",
+    "minimum-stability": "dev",
+    "description": "PHP to Python shell API.",
     "require": {
-        "symfony/process": "^3.4"
+        "symfony/process": "*"
     },
     "autoload": {
         "psr-4": {
