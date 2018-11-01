@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/home/ammadkhalid/projects/web/clients/auto-package/src" file="PyApi.php" realpath="/home/ammadkhalid/projects/web/clients/auto-package/src/PyApi.php" size="1433" time="2018-11-01T18:52:29+00:00" unixtime="1541098349" sha1="422af7ea8a4cea48d4f4f50d21d0446e61ee8526" relative="PyApi.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">AmmadKhalid</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Cli</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Symfony</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Component</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Process</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Process</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * Class PyApi</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * Which uses the Symfony Process.</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @package AmmadKhalid\Cli</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="13">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PyApi</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Api</token>
+  </line>
+  <line no="14">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="15">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">	 * Checks and gives command.</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">	 * For example any command is given then it will only give it.</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT">	 * Otherwise it will auto generate it and then it will give.</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">	 * @param null $command</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">	 * @param bool $useInterpreter</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">	 * @return null|string</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">checkCommand</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">False</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">is_null</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">			</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_QUESTION_MARK">?</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getProgramCommand</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getCommand</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="32">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">	 * It will run command instantly and will give output.</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">	 * @param      $command</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">	 * @param bool $useInterpreter</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">	 * params are for checkCommand</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">	 * @return string</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="42">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">False</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">checkCommand</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_VARIABLE">$process</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Process</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="47">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_VARIABLE">$process</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">mustRun</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$process</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getOutput</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="50">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="51"/>
+  <line no="52">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT">	 * This will command in background only.</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT">	 * will not give any output.</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">	 * @param      $command</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">	 * @param bool $useInterpreter</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT">	 *</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT">	 * @return null</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="62">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">runInBg</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">False</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="63">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="64">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">checkCommand</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$useInterpreter</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_VARIABLE">$process</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Process</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$command</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="67">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$process</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">start</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="68">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+</source>

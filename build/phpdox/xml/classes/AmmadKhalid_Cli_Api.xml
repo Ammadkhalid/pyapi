@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AmmadKhalid\Cli\Api" namespace="AmmadKhalid\Cli" name="Api" abstract="false" final="false" start="12" end="217">
+  <file path="/home/ammadkhalid/projects/web/clients/auto-package/src" file="Api.php" realpath="/home/ammadkhalid/projects/web/clients/auto-package/src/Api.php" size="4128" time="2018-11-01T19:04:27+00:00" unixtime="1541099067" sha1="ed0a06bda409a586fdee4868f514ec84a8a5ccc0" relative="Api.php"/>
+  <docblock>
+    <description compact="Class Api">This extends the API class.</description>
+    <package value="AmmadKhalid\Cli"/>
+  </docblock>
+  <implements full="AmmadKhalid\Cli\interfaces\Api" namespace="AmmadKhalid\Cli\interfaces" name="Api" unresolved="true"/>
+  <member name="interpreter" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="program" visibility="private" static="false" line="21">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="cli" visibility="protected" static="false" line="25">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="arguments" default="" type="array" visibility="protected" static="false" line="29">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="positionalArguments" default="" type="array" visibility="protected" static="false" line="33">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="dashes" default="&quot;--&quot;" type="string" visibility="protected" static="false" line="38">
+    <docblock>
+      <description compact="Argument Dashes."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="positionalArgumentDashes" default="NULL" visibility="protected" static="false" line="44">
+    <docblock>
+      <description compact="Positional Argument Dashes."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="pythonEnv" default="&quot;PYTHONIOENCODING&quot;" type="string" visibility="private" static="false" line="50">
+    <docblock>
+      <description compact="Python environmental variable name."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="encoding" visibility="public" static="false" line="57">
+    <docblock>
+      <description compact="for storing shell cli i.e PYTHONENCODING=UTF-8"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="65" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Api constructor."/>
+      <param type="string" variable="$interpreter"/>
+      <param type="string" variable="$program"/>
+    </docblock>
+    <parameter name="interpreter" byreference="false" type="{unknown}"/>
+    <parameter name="program" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="setPythonEncoding" start="77" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This will set Python environmental var."/>
+      <param type="string" variable="$encoding"/>
+      <return type="object">
+        <type full="AmmadKhalid\Cli\$this" namespace="AmmadKhalid\Cli" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="encoding" byreference="false" type="string" default="'UTF-8'"/>
+  </method>
+  <method name="setArgumentDashes" start="92" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This will set dashes for arguments.">For example we have given username
+and then it will convert it with --username.</description>
+      <param type="string" variable="$dash"/>
+      <return type="object">
+        <type full="\AmmadKhalid\Cli\Api" namespace="\AmmadKhalid\Cli" name="Api"/>
+      </return>
+    </docblock>
+    <parameter name="dash" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setPositionalArgumentDashes" start="107" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="same as setArgumentDashes but difference is, it is for positional arguments."/>
+      <param variable="$dash"/>
+      <return type="object">
+        <type full="\AmmadKhalid\Cli\Api" namespace="\AmmadKhalid\Cli" name="Api"/>
+      </return>
+    </docblock>
+    <parameter name="dash" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="addArgument" start="122" end="132" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This adds Arguments."/>
+      <param type="object" variable="$argument">
+        <type full="AmmadKhalid\Cli\string|array" namespace="AmmadKhalid\Cli" name="string|array"/>
+      </param>
+      <param type="null" variable="$value"/>
+      <return type="object">
+        <type full="AmmadKhalid\Cli\$this" namespace="AmmadKhalid\Cli" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="argument" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="generateShellExec" start="142" end="177" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="This will generate command for shell."/>
+      <param description="program name i.e `test --user` where `test` is program." type="string" variable="$program"/>
+      <param description="use to remove duplicate arguments." type="object" variable="$removeDuplicates">
+        <type full="AmmadKhalid\Cli\bool" namespace="AmmadKhalid\Cli" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="program" byreference="false" type="{unknown}"/>
+    <parameter name="removeDuplicates" byreference="false" type="boolean" default="true"/>
+    <inline>
+      <comment value="Apply Program." line="152"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="E.g: python main.py or test" line="153"/>
+      <comment value="add positional arguments first." line="160"/>
+      <comment value="add positional arguments first." line="167"/>
+    </inline>
+  </method>
+  <method name="getProgramCommand" start="187" end="189" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This will give program command to execute.">But only with program name. i.e `pft --user user --password`</description>
+      <param type="object" variable="$removeDuplicates">
+        <type full="AmmadKhalid\Cli\bool" namespace="AmmadKhalid\Cli" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="removeDuplicates" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getCommand" start="198" end="201" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This will give program command to execute with interpreter.">i.e `python3 main.py --user user --password`</description>
+      <param type="object" variable="$removeDuplicates">
+        <type full="AmmadKhalid\Cli\bool" namespace="AmmadKhalid\Cli" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="removeDuplicates" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="addPositionalArgument" start="209" end="214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="add positional argument."/>
+      <param variable="$name"/>
+      <return type="object">
+        <type full="AmmadKhalid\Cli\$this" namespace="AmmadKhalid\Cli" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="AmmadKhalid\Cli\PyApi" namespace="AmmadKhalid\Cli" name="PyApi"/>
+  </extenders>
+</class>

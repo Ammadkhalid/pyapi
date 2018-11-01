@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/ammadkhalid/projects/web/clients/auto-package/src">
+  <namespace name="AmmadKhalid\Cli">
+    
+    
+  <class name="Api" src="Api.php" description="Class Api" xml="classes/AmmadKhalid_Cli_Api.xml"/><class name="PyApi" src="PyApi.php" description="Class PyApi" xml="classes/AmmadKhalid_Cli_PyApi.xml"/></namespace>
+<namespace name="AmmadKhalid\Cli\Interfaces"><interface name="Api" src="interfaces/Api.php" xml="interfaces/AmmadKhalid_Cli_Interfaces_Api.xml"/></namespace></index>

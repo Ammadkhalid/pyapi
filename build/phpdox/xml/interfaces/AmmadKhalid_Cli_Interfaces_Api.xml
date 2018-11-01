@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="AmmadKhalid\Cli\Interfaces\Api" namespace="AmmadKhalid\Cli\Interfaces" name="Api" abstract="false" final="false" start="5" end="10">
+  <file path="/home/ammadkhalid/projects/web/clients/auto-package/src/interfaces" file="Api.php" realpath="/home/ammadkhalid/projects/web/clients/auto-package/src/interfaces/Api.php" size="141" time="2018-11-01T19:04:27+00:00" unixtime="1541099067" sha1="1c2a6c3f8a0e6a5cb0857d373f6fecbe32922ea3" relative="interfaces/Api.php"/>
+  <method name="getCommand" start="7" end="7" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getProgramCommand" start="8" end="8" abstract="false" final="false" static="false" visibility="public"/>
+</interface>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/ammadkhalid/projects/web/clients/auto-package/src">
+    <file name="Api.php" size="4128" time="2018-11-01T19:04:27+00:00" unixtime="1541099067" sha1="ed0a06bda409a586fdee4868f514ec84a8a5ccc0" xml="tokens/Api.php.xml"/>
+    <dir name="interfaces">
+      <file name="Api.php" size="141" time="2018-11-01T19:04:27+00:00" unixtime="1541099067" sha1="1c2a6c3f8a0e6a5cb0857d373f6fecbe32922ea3" xml="tokens/interfaces/Api.php.xml"/>
+    </dir>
+    <file name="PyApi.php" size="1433" time="2018-11-01T18:52:29+00:00" unixtime="1541098349" sha1="422af7ea8a4cea48d4f4f50d21d0446e61ee8526" xml="tokens/PyApi.php.xml"/>
+  </dir>
+</source>
